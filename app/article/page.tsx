@@ -5,5 +5,6 @@ import GetArticle from "../components/article/getArticle";
 import "../styles/globals.css";
 
 export default function ArticlePage() {
-    return <GetArticle id="972d2b8a" />;
+    const articleId = "972d2b8a";
+    return <GetArticle id={articleId} />;
 }
