@@ -1,0 +1,96 @@
+.bold {
+    font-weight: bold;
+}
+
+.contentBody p {
+    margin: 2.5rem 0;
+}
+
+.tags {
+    list-style: none;
+}
+
+.tags li {
+    list-style: none;
+    background: var(--twn-secondaryColor);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.tags li:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.imageSection {
+    display: block;
+    padding-bottom: 50%;
+    position: relative;
+    border-radius: 0.375rem;
+    transform: translate(0);
+}
+
+.imageSection:hover .image {
+    transform: scale(1.05);
+}
+
+.imageSection:hover .expandedBlurredImage {
+    transform: scale(1.2);
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 200ms ease;
+}
+
+.noOverflow {
+    z-index: 1;
+    overflow: hidden;
+}
+
+.blurredImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.expandedBlurredImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: transform 200ms ease;
+    background: center center no-repeat;
+}
+
+.blur {
+    background-size: cover;
+    filter: blur(0.625rem);
+    transition: transform 0.3s;
+}
+
+.titleSection {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.625rem 1.5rem;
+    font-size: 1rem;
+    z-index: 6;
+    background: rgba(0, 0, 0, 0.5);
+}

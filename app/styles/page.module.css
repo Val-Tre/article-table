@@ -1,0 +1,72 @@
+.main {
+    background-image: url(/images/bg-deco-left.svg),
+        url(/images/bg-deco-right.svg);
+    background-repeat: no-repeat;
+    background-position: var(--twn-menuWidth) bottom, 100% 0;
+    background-size: 150px, 250px;
+    background-attachment: fixed;
+    display: block;
+    margin-left: var(--twn-menuWidth);
+    height: 100vh;
+    overflow: auto;
+    padding: 5rem 2.5rem;
+}
+
+.contentWrapper {
+    max-width: var(--twnMaxWidth);
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contentCentered {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: var(--twn-font);
+    text-align: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 2.8125rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--twn-font);
+    font-weight: bold;
+}
+
+.withSpacing {
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.highlighted {
+    color: var(--twn-highlightColor);
+}
+
+.paragraph {
+    margin: 0;
+    font-size: 2.4375rem;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media (max-width: 960px) {
+    .main {
+        margin-left: 0;
+        background-position: 0 bottom, 100% 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 7.5rem;
+    }
+}

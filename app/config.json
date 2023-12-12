@@ -1,0 +1,22 @@
+{
+    "API_URL": "https://midaiganes.irw.ee/api/",
+    "LIST_PATH": "list/",
+
+    "NAVIGATION_DATA": [
+        {
+            "url": "/article",
+            "title": "Article",
+            "icon": "file"
+        },
+        {
+            "url": "/table",
+            "title": "Table",
+            "icon": "table"
+        },
+        {
+            "url": "/game-of-life",
+            "title": "Game Of Life",
+            "icon": "image"
+        }
+    ]
+}
